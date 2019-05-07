@@ -1,0 +1,10 @@
+<view class='save'>
+  <image bindtap="bindViewTap" src='xigua.png'></image>
+</view>
+<view class='text-container'>
+  <view class='text'>
+    <textarea  placeholder='主人今天有什么重要的事吗~' placeholder-class="place-holder" value='{{content}}' bindinput='getInfo'>
+    </textarea>
+    <text>记好了记得点击西瓜保存哦^_^</text>
+  </view>
+</view>

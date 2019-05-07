@@ -1,0 +1,62 @@
+/**logs.wxss**/
+@import"font/iconfont.wxss";
+page{
+  height: 100%;
+}
+.logs-container{
+  height: 100%;
+}
+.head .iconfont{
+    color: #B4B4B4;
+    font-size: 44rpx;
+    margin-left: 25rpx;
+    margin-right: 25rpx;
+    position: absolute;
+}
+
+.icon-icon_calendar{
+   right: 140rpx;
+}
+
+.icon-xiezi{
+  right: 80rpx;
+}
+
+.icon-Chart{
+  right: 16rpx;
+}
+
+.head{ 
+  display: flex;
+  flex-direction: row;
+}
+
+.today{
+  font-size: 50rpx;
+  font-weight: bold;
+  text-align: center;
+  color: #7C7C7C;
+  margin-top: 330rpx;
+  letter-spacing: 8rpx;
+}
+
+.tips{
+  color: #B4B4B4;
+  font-size: 12px;
+}
+
+.tips-contain{
+  text-align: center;
+}
+
+.icons{
+  text-align: center;
+  margin-top: 20rpx;
+}
+
+.icons .iconfont{
+  font-size: 120rpx;
+  color: #B4B4B4;
+  padding: 0rpx 15rpx 15rpx 15rpx;
+}
+

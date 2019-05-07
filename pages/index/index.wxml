@@ -1,0 +1,17 @@
+<!--logs.wxml-->
+<view class='logs-container'>
+  <view class='head'>
+    <icon bindtap="bindchartsTap" class='iconfont icon-Chart'></icon>
+    <icon bindtap="bindViewTap" class='iconfont icon-icon_calendar'></icon>
+    <icon bindtap="bindThingTap" class='iconfont icon-xiezi'></icon>
+  </view>
+  <view class='today'>{{M+'/'+D}}</view>
+  <view class='tips-contain'>
+    <text class='tips'>{{tips}}</text>
+  </view>
+  <view class='icons'>
+    <icon bindtap='changeicon1' class='iconfont icon-weather_sunny_big' animation="{{ani1}}" style="color:{{iconColor1}};"></icon>
+    <icon bindtap='changeicon2' style="color:{{iconColor2}};" animation="{{ani2}}" class='iconfont icon-weather_overcast_big'></icon>
+    <icon bindtap='changeicon3' style='color:{{iconColor3}};' animation="{{ani3}}"  class='iconfont icon-weather_thundershower_hail_big'></icon>
+  </view>
+</view>

@@ -1,0 +1,44 @@
+@import"font/iconfont.wxss";
+page{
+  background: #F4F4F4;
+}
+.text-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+textarea{
+  font-size: 14px;
+  width:650rpx;
+  height: 310rpx;
+  border: 1rpx solid #fff;
+  border-radius: 10rpx;
+  margin: 10rpx;
+  padding: 24rpx;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.text{
+  width: 670rpx;
+  height: 350rpx;
+}
+
+text{
+  font-size: 12px;
+  padding-left: 18rpx;
+  color: #808080;
+}
+
+.place-holder{
+  font-size: 12px;
+}
+.save{
+  text-align: center;
+  margin-top: 220rpx;
+  margin-bottom: 80rpx;
+}
+image{
+  width: 140rpx;
+  height: 140rpx;
+}

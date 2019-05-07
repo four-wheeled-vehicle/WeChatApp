@@ -1,0 +1,13 @@
+<view class='canvas-contain'>
+  <view>
+      <view class='date-show'>
+          <icon class='iconfont icon-arrowleft' bindtap='lastMonth'></icon>
+          <view class='date-text'>{{year}}年{{month}}月</view>
+          <icon class='iconfont icon-arrowright' bindtap='nextMonth'></icon>
+      </view>
+  </view>
+  <canvas canvas-id="canvas1"></canvas>
+  <view class='text-contain'>
+    <text>{{txt}}</text>
+  </view>
+</view>

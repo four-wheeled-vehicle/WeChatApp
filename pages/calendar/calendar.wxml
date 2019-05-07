@@ -1,0 +1,33 @@
+<!--calendar.wxml-->
+<view class='wrap'>
+    <view>
+        <view class='date-show'>
+            <icon class='iconfont icon-arrowleft' bindtap='lastMonth'></icon>
+            <view class='date-text'>{{year}}年{{month}}月</view>
+            <icon class='iconfont icon-arrowright' bindtap='nextMonth'></icon>
+        </view>
+    </view>
+    <view class='header'>
+        <view wx:for='{{date}}' class='{{(index == todayIndex) && isTodayWeek ? "weekMark" : ""}}'>{{item}}<view></view></view>
+    </view>
+
+    <view class='date-box'>
+        <view wx:for='{{dateArr}}' class='{{isToday == item.isToday ? "nowDay" : ""}}' data-date='{{item.isToday}}'>            
+            <view wx:if='{{item.white}}' class='date-head'>
+                <view bindtap='onChangeShowState' data-day='{{item.todayData}}'>
+                  <icon class='iconfont icon-xiaofangmianbao1 {{item.emotionstr == 0 ? "white" : (item.emotionstr == 1 ? "red" : (item.emotionstr == 2 ? "blue":"black")) }}'></icon>
+                </view>
+            </view>
+            <!-- <view class='date-weight'>{{item.weight}}</view> -->
+        </view>
+    </view>
+
+    <!--底部弹出框-->
+    <view class='thingsWarp'>
+      <view class="things {{showView?'show':'hide'}}">
+        <text>{{thingsText}}</text>
+      </view>
+    </view>
+
+
+</view>
